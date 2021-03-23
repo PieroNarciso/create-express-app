@@ -1,6 +1,6 @@
 {
-  "name": "@express/create-app",
-  "version": "1.0.0",
+  "name": "express-create-template",
+  "version": "0.0.1",
   "description": "npm package to create express apps with templates",
   "main": "index.js",
   "bin": {

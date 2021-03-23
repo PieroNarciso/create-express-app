@@ -1,3 +1,9 @@
-#!/usr/bin/node
+#!/usr/bin/env node
 
-console.log('Hello World');
+const init = async () => {
+  // TODO
+};
+
+init().catch(e => {
+  console.log(e);
+});
