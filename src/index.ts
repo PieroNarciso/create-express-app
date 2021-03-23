@@ -11,7 +11,7 @@ interface Args extends minimist.ParsedArgs {
 
 const argv: Args = minimist(process.argv.slice(2));
 
-const templates = ['express-ts'];
+const templates = ['express-ts', 'express-ts-eslint'];
 
 const options = {
   nameApp: '',
