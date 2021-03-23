@@ -6,6 +6,5 @@ NPM Packge to create Express App with templates
 ```bash
 npx create-express-template <app-name> --template <template-name>
 ```
-
-Aviable templates:
-* express-ts
+# Templates
+* `express-ts`: Express with Typescript support
