@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "description": "npm package to create express apps with templates",
   "main": "index.js",
-  "scripts": {
+  "bin": {
+    "create-express-app": "index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PieroNarciso/create-express.git"
   },
   "keywords": [],
-  "author": "PieroNarciso",
-  "license": "ISC",
+  "author": "Piero Narciso",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/PieroNarciso/create-express/issues"
   },
