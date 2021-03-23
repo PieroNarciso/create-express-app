@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import minimist from 'minimist';
+import { cyan, green } from 'kolorist';
 
 import { write, doesDirExists, isEmpty } from './helpers';
 
@@ -24,7 +25,7 @@ const init = async () => {
   } else return -1;
 
   if (argv.template) {
-    options.template = 'template-' + argv.template;
+    options.template = argv.template;
   }
 
   // Create directory or check if exists and is empy
@@ -32,6 +33,7 @@ const init = async () => {
   if (doesDirExists(ROOT_PATH)) {
     if (!isEmpty(ROOT_PATH)) {
       console.log('Dir already exists and is not empty');
+      return -1;
     }
   } else {
     fs.mkdirSync(ROOT_PATH, {});
@@ -41,25 +43,29 @@ const init = async () => {
   // Template path
   if (!templates.includes(options.template)) {
     console.log('Template not supported');
+    return -1;
   }
-  const TEMPLATE_PATH = path.resolve(__dirname + '/../' + options.template);
+  const TEMPLATE_PATH = path.resolve(__dirname + '/../template-' + options.template);
 
   const files = fs.readdirSync(TEMPLATE_PATH);
   for (const file of files.filter(f => f !== 'package.json' && f !== 'node_modules')) {
     write(file, ROOT_PATH, TEMPLATE_PATH);
   }
-  console.log('Copy');
 
   const pkg  = JSON.parse(fs.readFileSync(path.join(TEMPLATE_PATH, 'package.json'), 'utf-8'));
   pkg.name = path
     .basename(ROOT_PATH)
-    // #2360 ensure package.json name is valid
     .trim()
     .replace(/\s+/g, '-')
     .replace(/^[._]/, '')
     .replace(/[~)('!*]+/g, '-')
 
   fs.writeFileSync(path.join(ROOT_PATH, 'package.json'), JSON.stringify(pkg, null, 2));
+
+  console.log(cyan('\n Done. Now run:\n'));
+  console.log(green(` cd ${options.nameApp}`));
+  console.log(green(' npm install'));
+  console.log(green(' npm run dev'));
 };
 
 init().catch((e) => console.log(e));

@@ -39,10 +39,8 @@ export const doCreateDir = (path: fs.PathLike): boolean => {
 export const copy = (src: string, dest: string) => {
   const stat = fs.statSync(src);
   if (stat.isDirectory()) {
-    console.log('Is directory');
     copyDir(src, dest);
   } else {
-    console.log('Copy File to: ', dest);
     fs.copyFileSync(src, dest);
   }
 }
@@ -53,7 +51,6 @@ export const copy = (src: string, dest: string) => {
  * @param {string} destDir Full path of directory to copy
  */
 export const copyDir = (srcDir: string, destDir: string): void => {
-  console.log('Copy to', destDir);
   fs.mkdirSync(destDir, { recursive: true });
   for (const file of fs.readdirSync(srcDir)) {
     const srcFile = path.resolve(srcDir, file);
