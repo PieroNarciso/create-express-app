@@ -8,3 +8,4 @@ npx create-express-template <app-name> --template <template-name>
 ```
 # Templates
 * `express-ts`: Express with Typescript support
+* `espress-ts-eslint`: Express with Typescript support and Eslint
