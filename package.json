@@ -1,5 +1,5 @@
 {
-  "name": "express-create-template",
+  "name": "expressjs-create-app",
   "version": "0.1.0",
   "description": "Npm package to create Express apps with templates",
   "main": "./lib/index.js",
