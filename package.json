@@ -1,8 +1,8 @@
 {
   "name": "express-create-template",
-  "version": "0.0.1",
-  "description": "npm package to create express apps with templates",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "Npm package to create Express apps with templates",
+  "main": "./lib/index.js",
   "bin": {
     "create-express-app": "./lib/index.js"
   },
@@ -13,7 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/PieroNarciso/create-express.git"
   },
-  "keywords": [],
+  "keywords": [
+    "typescript",
+    "express",
+    "generate"
+  ],
   "author": "Piero Narciso",
   "license": "MIT",
   "bugs": {
