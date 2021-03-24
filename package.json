@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/PieroNarciso/expressjs-create-app#readme",
   "dependencies": {
+    "enquirer": "^2.3.6",
     "kolorist": "^1.3.2",
     "minimist": "^1.2.5"
   },
