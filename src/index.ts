@@ -14,7 +14,11 @@ interface Args extends minimist.ParsedArgs {
 const argv: Args = minimist(process.argv.slice(2));
 
 /** Templates available */
-const TEMPLATES = [magenta('express-ts'), magenta('express-ts-eslint')];
+const TEMPLATES = [
+  magenta('express-ts'),
+  magenta('express-ts-eslint'),
+  magenta('express-ts-mongoose'),
+];
 
 const targetOptions = {
   appName: '',
