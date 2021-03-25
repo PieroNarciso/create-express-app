@@ -1,0 +1,5 @@
+/**
+ * Helpers
+ *
+ * Global functions
+ */
