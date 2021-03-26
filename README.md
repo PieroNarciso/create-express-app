@@ -4,11 +4,11 @@ NPM Packge to create Express App with templates
 # Install
 
 ```bash
-npx expressjs-create-app
+npx cra-express-app
 
 or
 
-npx expressjs-create-app <app-name> --template <template-name>
+npx cra-express-app <app-name> --template <template-name>
 ```
 # Templates
 * `express-ts`: Express with Typescript support
