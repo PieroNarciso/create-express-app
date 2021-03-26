@@ -1,6 +1,8 @@
 # Create Express App
 NPM Packge to create Express App with templates
 
+![Preview](https://i.imgur.com/kZeMVCO.png)
+
 # Install
 
 ```bash
