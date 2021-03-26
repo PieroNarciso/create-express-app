@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PieroNarciso/expressjs-create-app.git"
+    "url": "git+https://github.com/PieroNarciso/create-express-app.git"
   },
   "keywords": [
     "typescript",
@@ -21,9 +21,9 @@
   "author": "Piero Narciso",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PieroNarciso/expressjs-create-app/issues"
+    "url": "https://github.com/PieroNarciso/create-express-app/issues"
   },
-  "homepage": "https://github.com/PieroNarciso/expressjs-create-app#readme",
+  "homepage": "https://github.com/PieroNarciso/create-express-app#readme",
   "dependencies": {
     "enquirer": "^2.3.6",
     "kolorist": "^1.3.2",
