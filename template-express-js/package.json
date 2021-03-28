@@ -1,0 +1,22 @@
+{
+  "name": "template-express-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "lint": "eslint './src/**/*.js'",
+    "lint:fix": "eslint --fix './src/**/*.js'",
+    "dev": "nodemon ./src/index.js --exec 'npm run lint && node'"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "nodemon": "^2.0.7"
+  }
+}
