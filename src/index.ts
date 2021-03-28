@@ -17,7 +17,6 @@ const argv: Args = minimist(process.argv.slice(2));
 const TEMPLATES = [
   magenta('express-js'),
   magenta('express-ts'),
-  magenta('express-ts-eslint'),
   magenta('express-ts-mongoose'),
 ];
 

@@ -5,7 +5,7 @@ import { PORT } from '@/config/env';
 
 const app = express();
 
-app.use(express.json())
+app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // DB

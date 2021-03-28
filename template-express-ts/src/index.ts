@@ -5,7 +5,7 @@ import { globalRouter } from '@/api/routes';
 const PORT = 8080;
 const app = express();
 
-app.use(express.json())
+app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 /** Global Routing */

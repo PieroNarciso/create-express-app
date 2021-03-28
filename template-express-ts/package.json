@@ -1,13 +1,12 @@
 {
-  "name": "template-express-ts",
+  "name": "template-express-ts-eslint",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "nodemonConfig": {
-    "ignore":
-    [
-      "**/*.test.ts",
-      "**/*.spec.ts",
+    "ignore": [
+      "./src/**/*.test.ts",
+      "./src/**/*.spec.ts",
       ".git",
       "node_modules"
     ],
@@ -15,12 +14,17 @@
       "src"
     ],
     "exec": "node -r tsconfig-paths/register -r ts-node/register ./src/index.ts",
+    "events": {
+      "start": "npm run lint"
+    },
     "ext": "ts, js"
   },
   "scripts": {
+    "lint": "eslint './src/**/*.ts'",
     "start": "node ./dist/index.js",
     "build": "tsc -p tsconfig.json",
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "lint:fix": "eslint --fix './src/**/*.ts'"
   },
   "author": "",
   "license": "ISC",
@@ -30,6 +34,9 @@
   "devDependencies": {
     "@types/express": "^4.17.11",
     "@types/node": "^14.14.35",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "eslint": "^7.22.0",
     "nodemon": "^2.0.7",
     "ts-node": "^9.1.1",
     "tsconfig-paths": "^3.9.0",
