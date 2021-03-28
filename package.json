@@ -16,7 +16,11 @@
   "keywords": [
     "typescript",
     "express",
-    "generate"
+    "generate",
+    "create-express-app",
+    "template",
+    "javascript",
+    "mongoose"
   ],
   "author": "Piero Narciso",
   "license": "MIT",
