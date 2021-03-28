@@ -13,6 +13,7 @@ or
 npx cra-express-app <app-name> --template <template-name>
 ```
 # Templates
+* `express-js`: Express with vanilla Javascript (ES6 modules)
 * `express-ts`: Express with Typescript support
 * `espress-ts-eslint`: Express with Typescript support and Eslint
 * `express-ts-mongoose`: Express With Typescript and Mongoose
