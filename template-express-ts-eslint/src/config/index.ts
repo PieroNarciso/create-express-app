@@ -1,3 +1,0 @@
-/**
- * Global App Config
- */
