@@ -1,6 +1,6 @@
 {
-  "name": "template-express-js",
-  "version": "0.2.0",
+  "name": "cra-express-app",
+  "version": "0.3.0",
   "description": "Npm package to create Express apps with templates",
   "main": "./lib/index.js",
   "bin": {
