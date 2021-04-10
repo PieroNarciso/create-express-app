@@ -18,6 +18,7 @@ const TEMPLATES = [
   magenta('express-js'),
   magenta('express-ts'),
   magenta('express-ts-mongoose'),
+  magenta('express-ts-typeorm'),
 ];
 
 const targetOptions = {
