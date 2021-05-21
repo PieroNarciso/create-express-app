@@ -1,7 +1,7 @@
-import express from "express";
+import express from 'express';
 
-import { globalRouter } from "@/api/routes";
-import db from "@/config/db";
+import { globalRouter } from '@/api/routes';
+import db from '@/config/db';
 
 const PORT = 8080;
 const app = express();
@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 
 /** DB Connection */
 db
-  .then((_) => console.log("DB Connected"))
+  .then((_) => console.log('DB Connected'))
   .catch((err) => console.error(err));
 
 /** Global Routing */

@@ -1,6 +1,6 @@
 import { createConnection } from 'typeorm';
 
-import { DB_URI } from '@/config/env'
+import { DB_URI } from '@/config/env';
 
 
 export default createConnection({
