@@ -6,11 +6,11 @@ NPM Packge to create Express App with templates
 # Install
 
 ```bash
-npx cra-express-app
-
+$ npx cra-express-app
+```
 or
-
-npx cra-express-app <app-name> --template <template-name>
+```bash
+$ npx cra-express-app <app-name> --template <template-name>
 ```
 # Templates
 * `express-js`: Express with vanilla Javascript (ES6 modules)
